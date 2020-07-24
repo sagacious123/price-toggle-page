@@ -1,0 +1,197 @@
+body {
+    background: url("images/bg-top.svg") 100% 0%, url("images/bg-bottom.svg") 0% 116%, hsl(240, 78%, 98%);
+    background-repeat: no-repeat;
+    /* background-position: 100%; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 2.7rem auto;
+    font-weight: 700;
+}
+.toggle-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+    margin: 0 auto;
+    color: hsl(233, 13%, 49%);
+}
+.toggle-bg {
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    width: 3.4rem;
+    height: 2rem;
+    padding: .8rem 1.84rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0 1.4rem;
+}
+.toggle-bg:hover {
+    background: hsl(233, 100%, 84%);
+}
+.toggle {
+    background-color: white;
+    border-radius: 50%;
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-top: -.66rem;
+    margin-left: 0.04rem;
+    padding: .2rem;
+    position: relative;
+}
+.tttoggle {
+    margin-left: -1.66rem !important;
+}
+.price-block, .price-block3, .price-block3  {  /*monthly price*/
+    display: block;
+}
+.price-nonejs { /*monthly price js switch*/
+    display: none;
+}
+.price-none, .price-none2, .price-none3 {   /*annual price*/
+    display: none;
+}
+.price-blockjs { /*annual price js switch*/
+    display: block;
+}
+
+.main-head {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: hsl(233, 13%, 49%);
+}
+.price {
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 0px 16px rgb(201, 201, 201);
+}
+.price h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 1.6rem;
+    color: hsl(232, 13%, 33%);
+}
+.price h5 {
+    margin-bottom: .6rem;
+}
+.price h5, p {
+    font-size: 15px;
+}
+.price span {
+    font-size: 2rem;
+    line-height: 20px;
+}
+.price .border {
+    border-top: 0.6px solid rgb(221, 221, 221);
+    border-bottom: 0.5px solid rgb(221, 221, 221);
+    padding: 1rem;
+}
+.price-blue .border {
+    border-top: 0.6px solid rgb(179, 179, 179);
+    border-bottom: 0.5px solid rgb(179, 179, 179);
+    padding: 1rem;
+}
+
+.price-white {
+    background: white;
+    color: hsl(233, 13%, 49%);
+    padding: 0 1.5rem 2rem 1.5rem;
+    width: 29%;
+}
+.price-blue {
+    background: hsl(237, 63%, 64%);
+    color: hsl(240, 78%, 98%);
+    padding: 0rem 1.5rem 2rem 1.5rem;
+    width: 28%;
+    height: 430px;
+}
+.price-blue h1 {
+    color: white;
+}
+.price-blue h5 {
+    margin-top: 2.8rem;
+}
+.btn {
+    margin: 1.2rem 0 0 0;
+    padding: 0.7rem 0;
+    border: .13rem solid hsl(236, 52%, 74%);
+    width: 100%;
+    border-radius: 6px;
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    outline: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background: white;
+    border: .13rem solid hsl(237, 63%, 64%);
+    color: hsl(237, 63%, 64%) !important;
+}
+.btn-white {
+    background: white;
+    border: .13rem solid white;
+    color: hsl(237, 63%, 64%) !important;
+}
+.btn-white:hover {
+    background: hsl(237, 63%, 64%);
+    border: .13rem solid white;
+    color: white !important;
+}
+.price .btn {
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    
+}
+hr {
+    height: 0rem;
+}
+/* .attribution {
+    text-align: center;
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    padding: .5rem;
+    font-size: .7rem;
+}
+.attribution a {
+    color: rgb(106, 0, 206);
+    text-decoration: none;
+    margin-bottom: 0;
+    font-weight: 700;
+} */
+
+@media (max-width: 870px) {
+    .container-flex {
+        width: 98%;
+    }
+}
+@media (max-width: 728px) {
+    .container-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+    }
+
+    .price-white {
+        padding: 0 1.5rem 2rem 1.5rem;
+        width: 100%;
+        margin-bottom: 1.8rem;
+    }
+    .price-blue {
+        padding: 0rem 1.5rem 2rem 1.5rem;
+        width: 100%;
+        height: 430px;
+        margin-bottom: 1.8rem;
+    }
+}
